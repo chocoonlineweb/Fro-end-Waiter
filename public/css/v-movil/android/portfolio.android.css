@@ -1,0 +1,133 @@
+.col-info{
+  padding-top: 10px;
+}
+
+.container.container-body .card-panel{
+  border-radius: 3px;
+  border: 0.1em solid rgb(224, 224, 224) !important;
+}
+
+.col-info .card-panel.social{
+  padding:5px 10px;
+}
+.col-info .card-panel h4, .col-info .card-panel h5, .col-info .card-panel h6{padding-left: 10px;}
+.collection li.collection-item.avatar a{
+  margin: 5px;
+}
+.parallax-container .parallax-prot .parallax{
+
+}
+.parallax-container.parallax-prot{
+
+}
+.parallax-prot .section{
+  height: 100%;
+}
+.parallax-prot{
+  border-bottom: 2px solid rgba(90, 90, 90, 0.8);
+}
+.parallax-prot .parallax img{
+  display: block;
+}
+.parallax-prot .row{
+  margin: 0;
+}
+ nav.bar-icon, nav.bar-icon .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    /*height: 44px;*/
+    line-height: 44px;
+}
+nav.bar-icon span,
+ul.bar-icon span{
+  position: relative;
+  display: block;
+  margin: -15px 0 0 0 ;
+}
+.parallax-prot .separator{
+  padding: 30px 0;
+  height: calc(100% - 171px);
+}
+.parallax-prot .corporation h1 img{
+  height: 58px;
+  margin-bottom: -5px;
+}
+.parallax-prot .section{
+  background: rgba(0,0,0,0.40);
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.40) 0%, rgba(0,0,0,0.26) 21%, rgba(0,0,0,0.64) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(41%, rgba(0,0,0,0.26)), color-stop(100%, rgba(0,0,0,0.64)));
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.40) 0%, rgba(0,0,0,0.26) 21%, rgba(0,0,0,0.64) 100%);
+  background: -o-linear-gradient(top, rgba(0,0,0,0.40) 0%, rgba(0,0,0,0.26) 21%, rgba(0,0,0,0.64) 100%);
+  background: -ms-linear-gradient(top, rgba(0,0,0,0.40) 0%, rgba(0,0,0,0.26) 21%, rgba(0,0,0,0.64) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.40) 0%, rgba(0,0,0,0.26) 21%, rgba(0,0,0,0.64) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
+.bar-menu ul li{
+  width: 90px;
+  padding: 6px 10px;
+}
+.bar-icon ul li i{
+  height: auto;
+  font-size: 1.5em !important;
+}
+.bar-icon ul li span{
+  height: 35px;
+}
+.parallax-prot .parallax{
+
+}
+.prot-avatar{
+  overflow: hidden;
+  border-radius: 50px;
+  display: inline-block;
+  margin: 5px calc(50% - 40px);
+  width: 91px;
+  height: 91px;
+}
+.prot-info{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 80px;
+}
+.prot-info h1{
+  font-size: 2em;
+  margin-top: 2px;
+}
+/*MEDIDAS DE CONTAINER O CONTENEDOR DE PERFIL*/
+.container.container-body .row.col-info{
+  margin: 0;
+}
+
+.container.container-body {
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 90%;
+}
+
+@media only screen and (min-width: 301px) {
+  .container.container-body {
+    width: 100%;
+  }
+  .cards.container-body {
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .container.container-body {
+    width: 95%;
+  }
+  .cards.container-body {
+    margin: 0 auto;
+    width: 40rem;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container.container-body {
+    width: 85%;
+  }
+  .cards.container-body {
+    margin: 0 auto;
+    width: 40rem;
+  }
+}

@@ -1,0 +1,14 @@
+/* Importación de estilos para web */
+@import "vendor/materialize/materialize.css";
+@import "vendor/sweetalert/sweetalert.css";
+@import "vendor/flexbox/flexbox.css";
+@import "standar/animation.css";
+@import "standar/nofx.css";
+@import "standar/filter.css";
+@import "standar/color.css";
+@import "standar/fonts.css";
+@import "standar/card.css";
+
+@import "material-icons.css";
+
+@import "v-web/nav.web.css";

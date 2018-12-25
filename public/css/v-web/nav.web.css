@@ -1,0 +1,72 @@
+nav.nav-edit, nav.nav-fotter{
+  height: 40px;
+}
+nav.nav-edit > ul{
+  float: right;
+  margin-right: 20px;
+  height: 40px;
+}
+nav.nav-edit > ul i{
+  font-size: 2em;
+  line-height: 40px;
+  height: 40px;
+}
+nav.nav-edit > ul li {
+  display: block;
+  padding: 0px 5px;
+  margin: 0;
+  font-size: small;
+  height: 100%;
+
+}
+nav.nav-edit > ul a {
+  padding: 0px;
+}
+nav.nav-edit > ul a:hover {
+  background-color: rgba(0,0,0,0) !important;
+}
+
+nav.nav-edit, nav.nav-edit .nav-wrapper i, nav.nav-edit a.button-collapse, nav.nav-edit a.button-collapse i {
+  line-height: 40px;
+}
+nav.nav-edit > ul li:hover,  nav.nav-edit > ul li:focus{
+  cursor: pointer;
+}
+/* ESTYLO FOTTER*/
+nav.nav-fotter, nav.nav-fotter .nav-wrapper i, nav.nav-fotter a.button-collapse, nav.nav-fotter a.button-collapse i {
+  line-height: 37px;
+}
+nav.nav-fotter{
+  background-color: rgb(228, 228, 228) !important;
+  box-shadow: 0 0px 5px 0 rgba(78, 78, 78, 0.54), 0 0px 0px 0 rgba(0, 0, 0, 0);
+  color: grey;
+  position: relative;
+  z-index: 900;
+}
+nav.nav-fotter ul{
+  float: left;
+  margin-left: 10px;
+  height: 40px;
+}
+nav.nav-fotter> ul li {
+  display: block;
+  padding: 5px 5px;
+  margin: 0;
+  font-size: small;
+
+}
+nav.nav-fotter> ul li span{
+  border-left: solid #CCC 2px;
+  padding-left: 7px !important;
+  position: static;
+  padding: 2px;
+  height: 25px;
+}
+nav.nav-fotter > ul li:hover,  nav.nav-fotter > ul li:focus{
+  cursor: pointer;
+
+}
+.Copyright{
+  float: right;
+  margin-right: 20px;
+}

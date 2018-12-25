@@ -1,0 +1,39 @@
+<div class="container" >
+  <div class=" not-border-shadow">
+    <div class="row center-sm">
+      <div class="card-panel col-xs-12 col-sm-7 col-sm-offset-1 col-md-6 ">
+
+        <form  name="vfLogin" >
+          <div class="row center-sm">
+            <div class="input-field col-xs-12">
+              <input id="email" name="email" ng-minlength="10" placeholder="Correo o email"
+                      type="email"  ng-model="loginCtrl.loginForm.email" class="validate" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <input id="password" name="password" ng-minlength="3" placeholder="Contraseña o password"
+                      type="password" ng-model="loginCtrl.loginForm.password" required>
+            </div>
+          </div>
+          <div class="row center-sm">
+            <div class="input-field col-xs-12">
+              <input class="filled-in" id="remember" name="remember"
+                      type="checkbox"  ng-model="loginCtrl.loginForm.remember"/>
+              <label for="remember">Recordar mis datos <a href> ¿Olvidaste tu contraseña?</a></label>
+            </div>
+          </div>
+          <br><br>
+          <div class="row">
+            <div class="col-xs-12">
+              <button class="btn btn-large not-shadow bg-green-2 waves-effect waves-light"
+                      ng-click="loginCtrl.login()" ng-disabled="!vfLogin.$valid" style="width:100%;">iniciar sesión</button><br>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,113 @@
+<nav class="nav-edit transparent text-grey-3 not-border-shadow ng-scope" >
+  <ul class="left">
+    <li ng-href="/">
+      <i class="material-icons text-grey-2">home</i>
+    </li>
+  </ul>
+  <ul>
+        <li class="cursor-pointer hover-underline font-point" ng-click="sParameters('view','inicio-de-sesion', 'false', 'false', 'false')">
+          <strong>Iniciar Sesión</strong>
+    </li>
+        <li class="dropdown-button" data-activates="drop-apps">
+        <div class="chip bg-fuchsia-1 white-text ">
+            ChocoOnline
+        </div>
+    </li>
+  </ul>
+</nav>
+<nav class="npw not-border-shadow bg-green-1" role="navigation" >
+  <div class="nav-wrapper ">
+    <a id="logo-container" href class="brand-logo left">Logo</a>
+    <a href data-activates="nav-mobile" class="button-collapse right"><i class="material-icons">menu</i></a>
+    <ul class="hide-on-med-and-down right">
+      <li><a href="#">Tramites</a></li>
+      <li><a href="#">Artículos</a></li>
+
+    </ul>
+
+    <ul id="nav-mobile" class="side-nav">
+      <li class="nav-session">
+        <img class="responsive-img" src="public/img/nav-session/choco-online-loro.jpg" alt="">
+        <div class="nav-filter trans-50 bd-grey-b">
+          <div class="nav-img bg-green-1">
+            <img  class="responsive-img" src="{{$ctrl.auth.avatar ? $ctrl.auth.avatar :  'public/img/d_user/default/profile/user_default_small.jpg'}}" alt="user_img">
+          </div>
+
+          <h5 class="nav-nameUser">{{$ctrl.auth.name ? $ctrl.auth.name :  "userName"}}</h5>
+          <strong class="nav-emailUser text-grey-2">{{$ctrl.auth.email ? $ctrl.auth.email : "userEmail" }}</strong>
+        </div>
+      </li>
+      <li ng-class="$ctrl.isRouteActive('/')"><a href="/">Inicio</a></li>
+
+      <div class="" ng-if="!($ctrl.isAuth)" >
+        <li class="divider"></li>
+        <li ng-class="$ctrl.isRouteActive('/registrate')"><a href="/registrate">Registrate</a></li>
+        <li ng-class="$ctrl.isRouteActive('/inicio-de-sesion')"><a href="/inicio-de-sesion">Inicio de Sesión </a></li>
+        <li class="divider"></li>
+        <li ng-class="$ctrl.isRouteActive('/star')"><a href=/star>Puntuaciones</a></li>
+        <li ng-class="$ctrl.isRouteActive('/favorites')"><a href=/favorites>Los Favoritos</a></li>
+        <li ng-class="$ctrl.isRouteActive('/lik')"><a href=/lik>Los Gustados</a></li>
+      </div>
+      <div class="" ng-if="$ctrl.isAuth">
+        <li class="divider"></li>
+        <li ng-class="$ctrl.isRouteActive('/mi-cuenta')"><a href=/mi-cuenta>Mi Cuenta</a></li>
+        <li ng-class="$ctrl.isRouteActive('/cpanel')"><a href=/cpanel>Mi CPanel</a></li>
+        <li ng-class="$ctrl.isRouteActive('/mis-puntuaciones')"><a href=/mis-puntuaciones>Puntuaciones</a></li>
+        <li ng-class="$ctrl.isRouteActive('/mis-favorites')"><a href=/mis-favorites>Favoritos</a></li>
+        <li ng-class="$ctrl.isRouteActive('/mis-gustos')"><a href=/mis-gustos>Gustos</a></li>
+        <li class="divider"></li>
+        <li ><a href ng-click="$ctrl.logout($ctrl.auth.email)">Facturas</a></li>
+        <li ><a href ng-click="$ctrl.logout($ctrl.auth.email)">Cerrar sesion</a></li>
+      </div>
+      <li class="divider"></li>
+      <li ng-class="$ctrl.isRouteActive('/acerca-de')"><a href="/acerca-de">Acerca de</a></li>
+    </ul>
+  </div>
+</nav>
+<style media="screen">
+  nav.npw, .npw .nav-wrapper i, nav.npw a.button-collapse, nav.npw a.button-collapse i{
+    height: 94px;
+    line-height: 94px;
+    display: block !important;
+  }
+  nav.npw a.button-collapse i {
+    font-size: 2.0em;
+  }
+  .side-nav li.nav-session {
+    height: 250px;
+    display:block;
+    overflow: hidden;
+  }
+  .nav-session .nav-filter {
+    top:0;
+    margin:0;
+    padding:0;
+    display:block;
+    position: absolute;
+    width:100%;
+    height:250px;
+    z-index:1;
+  }
+  .nav-img{
+    width:130px;
+    height:130px;
+    margin:20px calc(50% - 60px);
+    margin-bottom:10px;
+    border-radius:50%;
+    padding:7px;
+    overflow:hidden;
+  }
+  .nav-img img {
+    border-radius:50%;
+    z-Index:1;
+  }
+  .nav-nameUser,
+  .nav-emailUser{
+    text-align:center;
+    display:block;
+    margin: 0;
+  }
+  .side-nav{
+    height: calc(100% + 1px);
+  }
+</style>
